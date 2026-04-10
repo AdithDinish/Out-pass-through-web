@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+	@page {
+		margin: 8mm;
+	}
+
+	body {
+		background: #ffffff !important;
+	}
+
+	.pass-print-wrapper {
+		min-height: auto !important;
+		padding: 0 !important;
+		background: #ffffff !important;
+	}
+
+	.print-hidden {
+		display: none !important;
+	}
+
+	#pass-card {
+		max-width: 100% !important;
+		width: 100% !important;
+		box-shadow: none !important;
+		transform: scale(0.9);
+		transform-origin: top center;
+		break-inside: avoid;
+		page-break-inside: avoid;
+	}
+
+	#pass-card .pass-header {
+		padding-top: 16px !important;
+		padding-bottom: 12px !important;
+	}
+
+	#pass-card .pass-section {
+		padding-top: 12px !important;
+		padding-bottom: 12px !important;
+	}
+}
+
+.image-export .print-hidden {
+	display: none !important;
+}
+
+.image-export #pass-card,
+#pass-card.image-export {
+	box-shadow: none !important;
+	transform: scale(0.9);
+	transform-origin: top center;
+}
+
+.image-export #pass-card .pass-header,
+#pass-card.image-export .pass-header {
+	padding-top: 16px !important;
+	padding-bottom: 12px !important;
+}
+
+.image-export #pass-card .pass-section,
+#pass-card.image-export .pass-section {
+	padding-top: 12px !important;
+	padding-bottom: 12px !important;
+}
+
+.image-export #pass-card .pass-print-spacer,
+#pass-card.image-export .pass-print-spacer {
+	display: none !important;
+}
+
+.capture-mode {
+	background: #ffffff !important;
+}
+
+.capture-mode .print-hidden {
+	display: none !important;
+}
+
+.capture-mode #pass-card {
+	box-shadow: none !important;
+	transform: scale(0.88);
+	transform-origin: top center;
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+.capture-mode #pass-card .pass-header {
+	padding-top: 14px !important;
+	padding-bottom: 10px !important;
+}
+
+.capture-mode #pass-card .pass-section {
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+.capture-mode #pass-card .capture-hide-phone {
+	display: none !important;
+}
+
+.capture-mode #pass-card .text-lg {
+	font-size: 0.95rem !important;
+	line-height: 1.25rem !important;
+}
+
+.capture-mode #pass-card .text-2xl {
+	font-size: 1.05rem !important;
+}
+
+.capture-mode #pass-card .text-xl {
+	font-size: 1rem !important;
+}
